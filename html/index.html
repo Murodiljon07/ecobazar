@@ -11,10 +11,9 @@
   </head>
   <body>
     <!-- header -->
-
     <header>
       <!-- top bar -->
-      <section class="top-bar conatiner">
+      <section class="top-bar container">
         <div class="locatioan">
           <img
             src="../pictures/icons/Map Pin.svg"
@@ -46,10 +45,11 @@
           </div>
         </div>
       </section>
+
       <hr class="top-bar-hr" />
 
       <!-- search area -->
-      <section class="search-area conatiner">
+      <section class="search-area container">
         <div class="logo">
           <img
             src="../pictures/icons/logo.svg"
@@ -89,18 +89,76 @@
         </div>
       </section>
 
-      <!-- menu -->
+      <!-- menu bar -->
       <section class="menu-bar">
-        <div class="container">
+        <div class="menu-bar-con container">
           <div class="menu-title">
-            <select name="" id="" class="menu-sellector-style"></select>
-            <select name="" id="" class="menu-sellector-style"></select>
-            <select name="" id="" class="menu-sellector-style"></select>
-            <select name="" id="" class="menu-sellector-style"></select>
+            <select name="" id="" class="menu-sellector-style">
+              <option value=""><a href="#">Home</a></option>
+            </select>
+            <select name="" id="" class="menu-sellector-style">
+              <option value=""><a href="#">Shop</a></option>
+            </select>
+            <select name="" id="" class="menu-sellector-style">
+              <option value=""><a href="#">Pages</a></option>
+            </select>
+            <select name="" id="" class="menu-sellector-style">
+              <option value=""><a href="#">Blog</a></option>
+            </select>
             <a href="#" class="about-us">About Us</a>
             <a href="#" class="contact-us">Contact Us</a>
           </div>
-          <div class="phone-num"></div>
+          <div class="phone-num">
+            <span class="phone-icon"
+              ><img
+                src="../pictures/icons/PhoneCall 1.svg"
+                alt="PhoneCall 1.svg"
+            /></span>
+            <span class="copy-num">(219) 555-0114</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- hero section -->
+      <section class="hero container">
+        <div class="hero-desk">
+          <div class="hero-desk-dates">
+            <div class="desk-title">
+              <label for="desk-title" class="desk-title-lable"
+                >Best Deals</label
+              >
+              <h4 class="desk-title-heading">Sale of the Month</h4>
+            </div>
+
+            <div class="timer">
+              <div class="days">
+                <p class="time" id="days-input">00</p>
+                <label for="time" class="time-title">Days</label>
+              </div>
+
+              <span>:</span>
+
+              <div class="hours">
+                <p class="time" id="hours-input">00</p>
+                <label for="time" class="time-title">Hours</label>
+              </div>
+
+              <span>:</span>
+
+              <div class="mins">
+                <p class="time" id="mins-input">00</p>
+                <label for="time" class="time-title">Mins</label>
+              </div>
+
+              <span>:</span>
+
+              <div class="sec">
+                <p class="time" id="sec-input">00</p>
+                <label for="time" class="time-title">Secs</label>
+              </div>
+            </div>
+          </div>
+          <button class="hero-desk-btn">Shop Now -></button>
         </div>
       </section>
     </header>

@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.conatiner {
+.container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 30px;
@@ -133,6 +133,7 @@
   width: 98px;
   background: #00b207;
   color: #fff;
+  border: none;
   border-radius: 0 6px 6px 0;
   font-family: Poppins;
   font-weight: 600;
@@ -143,6 +144,7 @@
 
 .search-btn:hover {
   background: none;
+  border: 0.5px solid grey;
   color: #00b207;
   cursor: pointer;
 }
@@ -156,6 +158,10 @@
 .like-btn {
   background: none;
   border: none;
+}
+
+.like-btn:hover {
+  cursor: pointer;
 }
 
 .card-box {
@@ -198,8 +204,153 @@
   color: #1a1a1a;
 }
 
+/* menu bar */
+
+.active {
+  color: #fff;
+}
+
 .menu-bar {
   background: #000;
-  height: 50px;
   width: 100%;
+  color: #fff;
+}
+
+.menu-bar-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.menu-title {
+  display: flex;
+  gap: 32px;
+}
+.menu-sellector-style {
+  background: none;
+  color: #999999;
+  border: none;
+}
+
+.menu-sellector-style:focus {
+  overflow: hidden;
+}
+
+.about-us,
+.contact-us {
+  text-decoration: none;
+  color: #999999;
+}
+.phone-num {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.phone-icon {
+  height: 28px;
+}
+.copy-num {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.timer {
+  display: flex;
+  align-items: start;
+  text-align: center;
+}
+
+/* hero section */
+
+.hero {
+  height: 400px;
+  width: 100%;
+  margin: 72px auto;
+  padding: 68px 60px 97px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-image: url(../pictures/products/hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-desk {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.hero-desk-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.desk-title {
+  color: #fff;
+}
+.desk-title-lable {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+.desk-title-heading {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.timer {
+  display: flex;
+  gap: 8px;
+  color: #999999;
+}
+.days {
+}
+.time {
+  color: #00b207;
+}
+.days-input {
+}
+.time-title {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hours {
+}
+.hours-input {
+}
+.mins {
+}
+.mins-input {
+}
+.sec {
+}
+.sec-input {
+}
+.hero-desk-btn {
+  margin-top: 32px;
+  width: 162px;
+  height: 45px;
+  padding-top: 14px;
+  padding-right: 32px;
+  padding-bottom: 14px;
+  padding-left: 32px;
+  gap: 12px;
+  opacity: 1;
+  border-radius: 43px;
+  background: #00b207;
+  color: #fff;
+  border: none;
 }
