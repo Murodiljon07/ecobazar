@@ -13,6 +13,7 @@
     <!-- header -->
 
     <header>
+      <!-- top bar -->
       <section class="top-bar conatiner">
         <div class="locatioan">
           <img
@@ -24,20 +25,82 @@
             Store Location: Lincoln- 344, Illinois, Chicago, USA</label
           >
         </div>
-        <div class="top-bar-right-bar">
+        <div class="top-right-bar">
           <div class="valyute-language">
-            <select name="language" id="language">
+            <select name="language" id="language" class="valyute-language">
               <option value="uz">Uz</option>
               <option value="eng">Eng</option>
               <option value="ru">Ru</option>
             </select>
-            <select name="language" id="language">
+            <select name="valyute" id="valyute" class="valyute-language">
               <option value="uzs">UZS</option>
               <option value="eng">FS</option>
               <option value="ru">RUB</option>
             </select>
           </div>
-          <div class="sign"></div>
+          <span class="coach">|</span>
+          <div class="sign">
+            <a href="#" class="sign-link">Sign in</a>
+            <span class="coach">/</span>
+            <a href="#" class="sign-link">Sign in</a>
+          </div>
+        </div>
+      </section>
+      <hr class="top-bar-hr" />
+
+      <!-- search area -->
+      <section class="search-area conatiner">
+        <div class="logo">
+          <img
+            src="../pictures/icons/logo.svg"
+            alt="logo.svg"
+            class="header-logo"
+          />
+          <h1 class="logo-title">Ecobazar</h1>
+        </div>
+
+        <div class="search-panel">
+          <div class="input">
+            <span class="search-icon"
+              ><img src="../pictures/icons/Search.svg" alt="Search.svg"
+            /></span>
+            <input type="text" placeholder="Search" class="search-text-input" />
+          </div>
+          <button class="search-btn">Search</button>
+        </div>
+
+        <div class="card-favorites">
+          <button class="like-btn">
+            <img src="../pictures/icons/Heart.svg" alt="Heart.svg" />
+          </button>
+          <span class="coach">|</span>
+          <div class="card-box">
+            <div class="card-link">
+              <a href="#"
+                ><img src="../pictures/icons/card.svg" alt="card.svg"
+              /></a>
+              <span class="card-indicator">1</span>
+            </div>
+            <div class="card-description">
+              <p class="card-title">Shopping cart:</p>
+              <label for="card-link" class="total-cart">$57.00</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- menu -->
+      <section class="menu-bar">
+        <div class="container">
+          <div class="menu-title">
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <a href="#" class="about-us">About Us</a>
+            <a href="#" class="contact-us">Contact Us</a>
+          </div>
+          <div class="phone-num"></div>
         </div>
       </section>
     </header>
