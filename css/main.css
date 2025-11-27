@@ -47,6 +47,10 @@
   background: none;
 }
 
+.valyute-language:hover {
+  cursor: pointer;
+}
+
 .valyute-language:focus {
   overflow: hidden;
 }
@@ -231,6 +235,7 @@
   background: none;
   color: #999999;
   border: none;
+  font-size: 1rem;
 }
 
 .menu-sellector-style:focus {
@@ -564,6 +569,13 @@
   cursor: pointer;
 }
 
+.next-page:hover {
+  transform: translateX(5px);
+}
+.return-page:hover {
+  transform: translateX(-5px);
+}
+
 .active-page {
   background: #00b207;
   color: #fff;
@@ -752,6 +764,10 @@ footer {
 .link-block a {
   text-decoration: none;
   color: #999999;
+}
+
+.link-block a:hover {
+  color: #fff;
 }
 
 /* .helps {
