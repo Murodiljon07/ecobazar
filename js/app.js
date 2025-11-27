@@ -4,7 +4,7 @@ let HoursInput = document.getElementById("hours-input");
 let MinsInput = document.getElementById("mins-input");
 let SecInput = document.getElementById("sec-input");
 
-const timeController = function () {
+const timeController = () => {
   let defaultTime = new Date();
 
   /* day */

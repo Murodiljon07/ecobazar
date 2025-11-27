@@ -237,6 +237,11 @@
   overflow: hidden;
 }
 
+.menu-sellector-style:focus-visible,
+.menu-sellector-style:hover {
+  cursor: pointer;
+}
+
 .about-us,
 .contact-us {
   text-decoration: none;
@@ -249,6 +254,10 @@
 }
 .phone-icon {
   height: 28px;
+}
+
+.phone-icon:hover {
+  cursor: pointer;
 }
 .copy-num {
   font-family: Poppins;
@@ -317,7 +326,7 @@
 } */
 .time {
   color: #00b207;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 800;
 }
 /* .days-input {
@@ -358,6 +367,15 @@
   background: #00b207;
   color: #fff;
   border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero-desk-btn:hover {
+  cursor: pointer;
+  background: #bfe7a9;
+  color: #00b207;
+  transform: scale(1.01);
 }
 
 /* hero section pin massage */
@@ -409,8 +427,31 @@
   border-radius: 8px;
   overflow: hidden;
 }
+
 .main-box-display {
   position: relative;
+}
+
+.main-box-active-bar {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 1.1s;
+}
+
+.activebar-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: -31px 11px 100px -4px rgba(148, 148, 148, 0.46);
 }
 
 .main-box-display-tag {
@@ -475,11 +516,36 @@
   border: none;
 }
 
+.main-box-desc-btn:hover {
+  background: #00b207;
+  cursor: pointer;
+  color: #fff;
+}
+
+.main-box:hover {
+  cursor: pointer;
+  border: 1px solid #00b207;
+  box-shadow: 0px 3px 49px -12px rgba(0, 255, 12, 1);
+  .main-box-name {
+    color: #00b207;
+  }
+  transform: scale(1.01);
+
+  .main-box-active-bar {
+    display: block;
+  }
+}
+
+.activebar-btn:hover {
+  cursor: pointer;
+}
+
 .page-list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 36px 0;
+  gap: 5px;
 }
 
 .page-num,
@@ -493,6 +559,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.page-num:hover,
+.next-page:hover,
+.return-page:hover {
+  background: #57cb5b;
+  cursor: pointer;
 }
 
 .active-page {
@@ -676,6 +748,8 @@ footer {
   display: flex;
   text-decoration: none;
   flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .link-block a {
