@@ -267,6 +267,7 @@
 /* hero section */
 
 .hero {
+  position: relative;
   height: 400px;
   width: 100%;
   margin: 72px auto;
@@ -274,6 +275,7 @@
   border: 1px solid;
   border-radius: 10px;
   background-image: url(../pictures/products/hero.jpg);
+  background-size: contain;
   background-position: center;
   background-size: cover;
 }
@@ -315,6 +317,8 @@
 }
 .time {
   color: #00b207;
+  font-size: 18px;
+  font-weight: 800;
 }
 .days-input {
 }
@@ -353,4 +357,181 @@
   background: #00b207;
   color: #fff;
   border: none;
+}
+
+/* hero section pin massage */
+
+.hero-sec-pin {
+  position: absolute;
+  top: 65px;
+  left: 472px;
+  background: #ff8a00;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: #fff;
+}
+.hero-sec-pin-indicator {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.hero-sec-pin-key {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+/* main */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* main box */
+
+.main-box {
+  width: 312px;
+  height: 407px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.main-box-display {
+}
+.main-box-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 95px;
+  padding: 16px;
+}
+.main-box-desc-title {
+}
+.main-box-name {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4d4d4d;
+}
+.main-box-price {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #1a1a1a;
+}
+.main-box-popularity {
+}
+.main-box-desc-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+.page-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 36px 0;
+}
+
+.page-num,
+.next-page,
+.return-page {
+  border: none;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-page {
+  background: #00b207;
+  color: #fff;
+}
+
+/* subcribe */
+
+.subcribe {
+  background: #f7f7f7;
+  padding: 40px;
+}
+
+.subcribe-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.subcribe-desc {
+  max-width: 448px;
+}
+.subcribe-deck-heading {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #1a1a1a;
+}
+.subcide-desc-text {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #999999;
+}
+.subcribe-input {
+  width: 536px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+#input-email {
+  border: none;
+}
+#input-email:focus {
+  overflow: hidden;
+}
+
+/* media */
+
+.media {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bx {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-media {
+  background: #00b207;
+  color: #fff;
 }
