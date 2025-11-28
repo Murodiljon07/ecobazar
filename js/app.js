@@ -31,3 +31,52 @@ const timeController = () => {
 setInterval(() => {
   timeController();
 }, 1000);
+
+const cartIndicator = document.querySelector(".card-indicator");
+const addToCartButtons = document.querySelectorAll(".main-box-desc-btn");
+
+let cartCount = Number(localStorage.getItem("cartCount")) || 0;
+
+addToCartButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    cartCount++;
+  });
+  if (cartCount >= 10) {
+    cartIndicator.textContent = "10+";
+  } else {
+    cartIndicator.textContent = cartCount;
+  }
+});
+
+const headerLikeBtn = document.querySelector(".like-btn");
+const productLikeBtns = document.querySelectorAll(
+  ".main-box .activebar-btn:first-child"
+);
+
+productLikeBtns.forEach((btn, index) => {
+  if (likedProducts.includes(index)) {
+    btn.classList.add("active-like");
+  }
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active-like");
+
+    if (btn.classList.contains("active-like")) {
+      if (!likedProducts.includes(index)) {
+        likedProducts.push(index);
+      }
+    } else {
+      likedProducts = likedProducts.filter((i) => i !== index);
+    }
+  });
+});
+
+function updateHeaderLike() {
+  if (likedProducts.length > 0) {
+    headerLikeBtn.classList.add("active-like");
+  } else {
+    headerLikeBtn.classList.remove("active-like");
+  }
+}
+
+updateHeaderLike();

@@ -182,11 +182,13 @@
   position: absolute;
   right: -5px;
   background: #2c742f;
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   text-align: center;
+  padding: 2px;
   border-radius: 50%;
   color: #fff;
+  font-size: 12px;
 }
 /* .card-description {
 } */
@@ -799,4 +801,18 @@ footer {
 
 .pay-method-btn:hover {
   cursor: pointer;
+}
+
+.active-like {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(95%) saturate(6000%)
+    hue-rotate(340deg) brightness(95%) contrast(105%);
+  transform: scale(1.2);
+}
+
+.active-like img {
+  transform: scale(1.2);
+}
+
+.active-like {
+  transition: 0.2s;
 }
